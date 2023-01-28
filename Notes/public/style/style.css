@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: monospace;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+/**GLOBAL**/
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+form{
+    width: 400px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    height: 250px;
+    justify-content: space-evenly;
+    cursor: pointer;
+    align-items: center;
+    margin: auto;
+}
+
+section{
+    width: 85%;
+    margin: auto;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+}
+
+/**GLOBAL END**/
+
+/**LOGIN/REGISTER START**/
+.register{
+    margin-top: 50px;
+}
+
+.register p, h2{
+    text-align: center;
+}
+
+.register input{
+    width: 90px;
+    border: none;
+    text-align: center;
+    background: transparent;
+    border-bottom: 1px solid #222;
+}
+
+button {
+    padding: 7px 38px;
+    border: none;
+    background-color: #242026;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+/**LOGIN/REGISTER END**/
+
+
+
+
+
+
+/**MAIN LAYOUT START**/
+.container{
+    max-width: 600px;
+    margin: auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 70vh 10vh;
+    align-items: center;
+    justify-content: center;
+
+}
+/**MAIN LAYOUT END**/
+/**HEADER START**/
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+ul a{
+    padding: 0 10px;
+}
+
+/**HEADER END**/
+
+
+
+/**MAIN SECTION START**/
+.note{
+    width: 400px;
+  box-shadow: 0 0 5px rgb(7,25,63);
+  background: #222;
+  padding: 10px;
+  position: relative;
+  color: #ddd;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: auto;
+}
+.note-title{
+    margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.note-text{
+    width: 100%;
+    height: 70px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin: 10px 0;
+    color: #fff9;
+}
+
+.close{
+    cursor: pointer;
+    background: transparent;
+    color: red;
+    position: absolute;
+    top:0;
+    right: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .note-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+/**MAIN SECTION END**/
+
+
+/**CREATE NOTE START**/
+input, textarea{
+    background: #222;
+    border: none;
+}
+
+/**CREATE NOTE END**/
